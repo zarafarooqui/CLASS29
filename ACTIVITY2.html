@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JAVASCRIPT CALLBACKS</h2>
+        <p id="result"></p>
+        <script>
+    function display(value){
+        document.getElementById("result").innerHTML=value;
+    }
+    function calc(num1,num2,callback){
+        let sum=num1+num2;
+        callback(sum);
+    }
+    calc(25,15,display);
+        </script>
+    </body>
+</html>

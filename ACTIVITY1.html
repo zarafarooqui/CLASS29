@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Convert a JS object into JSON string</h2>
+        <p id="result"></p>
+        <script>
+var myObj={name:"SARA",age:"14",grade:"9"}
+var myJSON=JSON.stringify(myObj);
+var newObj=JSON.parse(myJSON);
+document.getElementById("result").innerHTML=newObj.age
+        </script>
+    </body>
+</html>

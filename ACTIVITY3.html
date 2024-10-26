@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JS PROMISE</h2>
+        <p id="demo"></p>
+        <script>
+   function display(v){
+    document.getElementById("demo").innerHTML=v;
+   }
+   function sum(a,b){
+  var sum=a+b;
+  display(sum);
+
+   }
+   let myPromise=new Promise(function(myResolve,myReject){
+  let x=6;
+  if(x==0){
+    myResolve("SUCCESS");
+  }else{
+    myReject("Error");
+  }
+   })
+  myPromise.then(
+    function(value){
+        sum(3,7)
+    },
+    function (error){
+        sum(error);
+    }
+  );
+        </script>
+    </body>
+</html>
